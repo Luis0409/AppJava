@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Curso de Java</string>
+    <string name="caracteristicas">Sencillez\nJava es un lenguaje simple para aprender, leer y programar.\n\nSeguro\nLa plataforma java está diseñada con características de seguridad integradas
+en el sistema de lenguaje y de ejecución, como la comprobación de tipos
+estática en el tiempo de compilación y la verificación en tiempo de ejecución.\n\nAlto rendimiento\n
+Aunque java es un lenguaje interpretado, fue diseñado para ser compatible con
+compiladores ‘justo a tiempo’, que compilan dinámicamente el código de bytes
+al código de máquina.</string>
+    <string name="historia">Java nace en 1991 con el nombre &quot;OAK&quot;, posteriormente cambiado por Green
+por problemas legales, y finalmente con la denominación actual JAVA.
+El objetivo de java era crear un lenguaje de programación parecido a C++ en
+estructura y sintaxis, fuertemente orientado a objetos, pero con una máquina
+virtual propia. Esto se hizo bajo el principio, de poder ser usado bajo cualquier
+arquitectura &quot;Write Once, Run Anywhere (escríbelo una vez, ejecútalo en
+cualquier sitio)&quot;.
+En 1992 se presenta el proyecto verde, con los prototipos a bajo nivel. Entre
+1993 y 1994 se trabaja para poder presentar un prototipo funcional (hotJava)
+donde se ve todo el potencial que JAVA puede ofrecer.</string>
+    <string name="introduccion">Java es un lenguaje de programación y una plataforma informática
+comercializada por primera vez en 1995 por Sun Microsystems. Hay muchas
+aplicaciones y sitios web que no funcionarán a menos que tenga Java instalado
+y cada día se crean más. Java es rápido, seguro y fiable. Desde portátiles
+hasta centros de datos, desde consolas para juegos hasta súper
+computadoras, desde teléfonos móviles hasta Internet, Java está en todas
+partes.</string>
+    <string name="conceptosBasicos">Tipos de datos \n
+En Java puedes utilizar diferentes tipos de datos. Estos ocupan espacio de memoria y se les puede asignar un contenido como un valor numérico, un carácter o una cadena de caracteres.  Existen dos tipos de datos: el tipo primitivo y el tipo objeto o referencia. El tipo primitivo, a su vez, contiene otras variaciones. La primera son los enteros, que abarcan cuatro tipos de valores numéricos que varían según el rango de capacidad de caracteres: \n
+•	Byte: desde -128 al 127 caracteres. Ocupa 1 byte de memoria. \n
+•	Short: desde -32,768 a 32,767 caracteres. Ocupa 2 bytes de memoria. \n
+•	Int: -2,147,483,648 a 2,147,483,647. Ocupa 4 bytes. \n
+•	Long: Ocupa 8 bytes y tiene el doble de rango que el tipo Int. \n \n
+Clase \n
+Una clase en lenguaje de programación Java se puede entender como un prototipo que define las variables (lo que lo diferencia de otras) y los métodos (las acciones que puede realizar) comunes a un cierto tipo de instancias. \n
+En nuestro ejemplo de la fábrica de galletas, la clase sería uno de los moldes para galletas, junto con los métodos para colorearlas y la receta (método para prepararlas). Quiere decir que en nuestro programa de Java tendremos una manera de especificar las características de la galleta dado que hay diferentes moldes de galletas. \n \n
+Objeto \n
+En el ámbito del lenguaje de programación Java, un objeto es básicamente una instancia de una clase (las instancias de las que hablábamos hace un momento). \n
+Para nuestro ejemplo de la fábrica de galletas, los objetos vendrían siendo cada una de las diferentes galletas obtenidas de los moldes definidos (clases). \n
+Lo más importante de los objetos en Java es que permiten tener un control total sobre "quién" o "qué" puede acceder a sus miembros, es decir, los objetos pueden tener miembros públicos a los que podrán acceder otros objetos o miembros privados a los que sólo puede acceder él. Estos miembros pueden ser tanto variables como funciones. \n \n
+Herencia y Polimorfismo \n
+Con la herencia podemos definir una clase a partir de otra que ya exista, de forma que la nueva clase tendrá todas las variables y métodos de la clase a partir de la que se crea, más las variables y métodos nuevos que necesite. A la clase base a partir de la cual se crea la nueva clase se le llama superclase. \n
+Por ejemplo, podríamos tener una clase genérica Animal, y heredamos de ella para formar clases más específicas, como Pato, Elefante, o León. Estas clases tendrían todo lo de la clase padre Animal, y además cada una podría tener sus propios elementos adicionales. Una característica derivada de la herencia es que, por ejemplo, si tenemos un método dibuja(Animal a), que se encarga de hacer un dibujo del animal que se le pasa como parámetro, podremos pasarle a este método como parámetro tanto un Animal como un Pato, Elefante, o cualquier otro subtipo directo o indirecto de Animal. Esto se conoce como polimorfismo. \n \n
+Modificadores de acceso \n
+Tanto las clases como sus elementos (constructores, campos y métodos) pueden verse modificados por lo que se suelen llamar modificadores de acceso, que indican hasta dónde es accesible el elemento que modifican. Tenemos tres tipos de modificadores: \n
+•	privado: el elemento es accesible únicamente dentro de la clase en la que se encuentra.  \n
+•	protegido: el elemento es accesible desde la clase en la que se encuentra, y además desde las subclases que hereden de dicha clase. \n
+•	público: el elemento es accesible desde cualquier clase. \n
+</string>
+
+    <string name="condiciones">Bucles \n
+While \n
+While es tan sencillo como decir mientras se cumpla la condición se ejecuta el código que haya dentro del bucle, y en el momento que ya no se cumpla esa condición se sale del bucle. \n
+while (condicion) { \n
+... \n
+} \n \n
+Do while \n
+El bucle do while es prácticamente igual al while, pero con la diferencia de que el código del bucle se ejecutara al menos una vez ya que la comprobación se hace después de cada iteración y no antes como en el caso del while. \n
+do { \n
+    ... \n
+} while (condicion) \n \n
+For \n
+El bucle for sirve para ejecutar un código un número conocido de veces, por ejemplo recorrer un array o cualquier otro tipo de colección o simplemente ejecutar el código un número concreto de veces. \n
+En java hay dos posibles tipos de bucle for: \n
+El más habitual es en el que se establece el numero desde el que va a empezar el bucle, hasta cuando se va a seguir ejecutando el bucle y finalmente el modo en el que se actualiza el contador del bucle, que aunque habitualmente lo que se hace es incrementar en una unidad el contador esto no tiene que ser obligatoriamente así. \n
+for (inicializacion; condicion; actualizacion) { \n
+    ... \n
+} \n \n
+Condicionales \n
+If \n
+La estructura condicional más simple en Java es el if, se evalúa una condición y en caso de que se cumpla se ejecuta el contenido entre las llaves {} o en caso de que se omitan se ejecuta el código hasta el primer «;» por lo tanto si no se usan los {} la condición aplica solo a la siguiente instrucción al if. \n
+if (condicion) { \n
+    ejecutar(); \n
+} \n \n
+Switch \n
+Con el switch se puede hacer un control del tipo if else if… más estructurado pero en realidad no exactamente igual puesto que con el switch lo que se hace es definir un conjunto de casos que van a tener una ejecución distinta y se ejecutará el caso que coincida con el valor indicado en el switch. \n
+switch (variable) {  \n
+    case valor_1: \n
+    case valor_2: \n
+        // Ejecutar si el valor de variable es igual a valor_1 o a valor_2 \n
+        ejecutarA(); \n
+        break; // Salir del switch \n
+    case valor_3: \n
+        // Ejecutar si el valor de variable es igual a valor_3 \n
+        ejecutarB(); \n
+        break; // Salir del switch \n
+    default: \n
+        // Ejecutar si el valor de varible es distinto del del resto de casos \n
+        ejecutarC(); \n
+        break; // Salir del switch \n
+} \n
+</string>
+
+    <string name="nota">Hacer clic en la imagen para poder descargar el archivo \nNOTA: Es necesario tener instalado Google Drive para abrir el archivo</string>
+
+    <string name="creditos">Elaborado por: \n
+Luis Fernando Buenrostro Martinez \n
+Jaqueline Padrón Vargas \n
+Marco Saul López Núñez \n
+Grupo: GDS0413 \n
+Materia: Diseño de Apps \n
+Profesor: Jose Eduardo Barrientos Avalos
+</string>
+</resources>

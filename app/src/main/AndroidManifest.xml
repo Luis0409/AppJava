@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.edu.utng.appjava">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".aprende.arreglosBucles"
+            android:label="Arreglos y Bucles"/>
+        <activity android:name=".aprende.conceptosBasicos"
+            android:label="Conceptos Basicos"/>
+        <activity android:name=".principal.creditos"
+            android:label="Creditos"/>
+        <activity android:name=".principal.programasMuestras"
+            android:label="Programas de muestra"/>
+        <activity android:name=".principal.AprenderProgramar" />
+        <activity
+            android:name=".introduccion.caracteristicas"
+            android:label="Caracteristicas de Java" />
+        <activity
+            android:name=".introduccion.historia"
+            android:label="Historia de Java" />
+        <activity
+            android:name=".introduccion.introduccion2"
+            android:label="Introduccion a Java" />
+        <activity
+            android:name=".principal.introduccion"
+            android:label="Introduccion" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

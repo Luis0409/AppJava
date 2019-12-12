@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/itmIntroduccion"
+        android:title="Introduccion"/>
+    <item android:id="@+id/itmAprender"
+        android:title="Aprender programacion"/>
+    <item android:id="@+id/itmMuestras"
+        android:title="Programas de muestras"/>
+    <item android:id="@+id/itmCreditos"
+        android:title="Creditos"/>
+    <item android:id="@+id/itmSalir"
+        android:title="Salir"/>
+</menu>
